@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bienvenue sur le portail historique intéractif - Amysto</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/css/index.css}" />
+</head>
+
+<body>
+    <div class="menu">
+      <a href="/persona">  
+        <button>Personas</button>  
+      </a>
+
+      <a href="/">  
+        <button>Agregar</button>  
+      </a>
+
+      <a href="/actualizar">  
+        <button>Actualizar</button>  
+      </a>
+
+      <a href="/eliminar">  
+        <button>Eliminar</button>  
+      </a>
+    </div>
+
+    <div class="formulario">
+
+      <div class="imagen-principal">
+          <img src="../static/imgs/img.jpg" width="450px" height="450px" th:src="@{imgs/img.jpg}"/>
+      </div>
+
+      <div class="datos-busqueda">
+        <form action="/eliminar" method="post">
+            <p>Id</p><br>
+            <input type="text" name="id"><br><br>
+            <input type="submit" value="Eliminar">
+
+        </form>
+      </div>
+  </div>
+
+        
+
+    </div>
+</body>
+
+
+
+
+</html>

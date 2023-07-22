@@ -1,0 +1,43 @@
+.menu{
+    background-color: rgba(0, 0, 0, 0.778);
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+.menu button{
+    width: 90px;
+    height: 35px;
+    margin: 10px;
+ }
+
+.formulario{
+    background-color: rgba(229, 224, 224, 0.337);
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+}
+.imagen-principal{
+    margin: 30px;
+}
+
+.datos-busqueda{
+    
+    margin: 10px;
+    padding-left: 30px;
+}
+
+.datos-busqueda button{
+    width: 165px;
+    height: 30px;
+    background-color: rgba(41, 151, 235, 0.722);
+    border-radius: 5px;
+    
+}
+
+
+.table{
+    background-color: rgba(41, 151, 235, 0.722);
+}
+
+

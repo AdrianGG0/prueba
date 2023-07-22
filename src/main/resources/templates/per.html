@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bienvenue sur le portail historique intéractif - Amysto</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="@{/css/per.css}" />
+</head>
+
+<body>
+    <div class="menu">
+
+      <a href="/persona">  
+        <button>Personas</button>  
+      </a>
+
+      <a href="/">  
+        <button>Agregar</button>  
+      </a>
+
+      <a href="/actualizar">  
+        <button>Actualizar</button>  
+      </a>
+
+      <a href="/eliminar">  
+        <button>Eliminar</button>  
+      </a>
+    </div>
+
+    <div class="personas">
+      <table class="table">
+        <thead class="thead-dark">
+              <tr class="columnas">
+                <th scope="col">Id>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Identificacion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr th:each="cl:${personas}">
+                <th scope="row" th:text="${cl.id}"></th>
+                <td th:text="${cl.nombre}"></td>
+                <td th:text="${cl.apellido}"></td>
+                <td th:text="${cl.identificacion}"></td>
+              </tr>
+            </tbody>
+          </table>
+        
+    </div>
+
+        
+
+    </div>
+</body>
+
+
+
+
+</html>
