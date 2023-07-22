@@ -35,10 +35,7 @@
         <div class="datos-busqueda">
             <form action="/agregar" method="post">
                 <p>Nombre</p><br>
-                <input type="text" name="nombre" th:field="*{nombre}"><br>
-                <small class="form-text text-danger" th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}"></small
-                
-                
+                <input type="text" name="nombre"><br>
                 <p>Apellido</p><br>
                 <input type="text" name="apellido"><br>
                 <p>Identificacion</p><br>

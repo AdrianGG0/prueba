@@ -68,12 +68,8 @@ public class PersonaController {
     }
 
     @PostMapping("/agregar")
-    public String insertPersona(@Valid @ModelAttribute Persona unaPersona, BindingResult res, Model model)
+    public String insertPersona( @ModelAttribute Persona unaPersona)
     {
-        if (res.hasErrors()) {			
-            return "index";
-        }
-
             userService.insertarUsuario(unaPersona);
             return "per";
     }    
